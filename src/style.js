@@ -60,10 +60,11 @@ exports.fatResponsiveRadiobutton = {
 			width: 0,
 			height: 0,
 			zIndex: 2,
-			fontSize: vmin(0.1),
+			fontSize: '1px',
 			border: prop([vmin(2.5), 'solid']),
 			borderRadius: '50%',
-			opacity: 0
+			opacity: 0,
+			overflow: 'hidden'
 		}
 	},
 	':checked + label': {

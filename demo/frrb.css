@@ -1,33 +1,35 @@
-._ebcbd5d8, ._ebcbd5d8 + label::after {
+._502d71b2, ._502d71b2 + label::after {
 	opacity: 0;
 }
-._ebcbd5d8, ._ebcbd5d8 + label::before, ._ebcbd5d8 + label::after {
+._502d71b2, ._502d71b2 + label::before, ._502d71b2 + label::after {
 	position: absolute;
 	display: inline-block;
 }
-._ebcbd5d8 {
+._502d71b2 {
 	vertical-align: middle;
 	z-index: 100;
 }
-._ebcbd5d8 + label {
+._502d71b2 + label {
 	padding-left: 15vmin;
 	display: block;
 	position: relative;
 	line-height: 10vmin;
 	font-size: 5vmin;
-	overflow: hidden;
 }
-._ebcbd5d8 + label, ._ebcbd5d8 + label::before {
+._502d71b2 + label, ._502d71b2 + label::before {
 	height: 10vmin;
 }
-._ebcbd5d8 + label, ._ebcbd5d8 + label::before, ._ebcbd5d8 + label::after {
+._502d71b2 + label, ._502d71b2 + label::before, ._502d71b2 + label::after {
 	cursor: pointer;
 }
-._ebcbd5d8 + label::before, ._ebcbd5d8 + label::after {
+._502d71b2 + label, ._502d71b2 + label::after {
+	overflow: hidden;
+}
+._502d71b2 + label::before, ._502d71b2 + label::after {
 	content: "";
 	border-radius: 50%;
 }
-._ebcbd5d8 + label::before {
+._502d71b2 + label::before {
 	width: 10vmin;
 	left: 0;
 	top: 50%;
@@ -35,7 +37,7 @@
 	border: 0.75vmin solid #666;
 	box-shadow: inset 0.5vmin 0.5vmin 0.5vmin 0 rgba(153, 153, 153, 0.75);
 }
-._ebcbd5d8 + label::after {
+._502d71b2 + label::after {
 	transition: color .3s, opacity .3s;
 	box-shadow: 0.3vmin 0.3vmin 0.3vmin 0 rgba(153, 153, 153, 0.75);
 	text-align: center;
@@ -44,26 +46,26 @@
 	width: 0;
 	height: 0;
 	z-index: 2;
-	font-size: 0.1vmin;
+	font-size: 1px;
 	border: 2.5vmin solid;
 }
-._ebcbd5d8:checked + label::after {
+._502d71b2:checked + label::after {
 	opacity: 1;
 }
-._ebcbd5d8.frcb-striked + label {
+._502d71b2.frcb-striked + label {
 	transition: color .3s, text-decoration .3s;
 }
-._ebcbd5d8.frcb-striked + label::after {
+._502d71b2.frcb-striked + label::after {
 	transition: opacity .3s;
 }
-._ebcbd5d8.frcb-striked:checked + label {
+._502d71b2.frcb-striked:checked + label {
 	text-decoration: line-through;
 	color: #999;
 }
-._ebcbd5d8.frcb-striked:checked + label::before {
+._502d71b2.frcb-striked:checked + label::before {
 	border-color: #999;
 }
-._ebcbd5d8:focus + label {
+._502d71b2:focus + label {
 	outline: rgba(33, 33, 33, .2) solid 5px;
 	outline: -moz-outline-color auto 5px;
 	outline: -webkit-focus-ring-color auto 5px;
