@@ -41,6 +41,7 @@
     "eslint": "^1.5.1",
     "eslint-config-xo": "^0.6.0",
     "eslint-config-xo-react": "^0.3.0",
+    "eslint-plugin-babel": "^2.1.1",
     "eslint-plugin-react": "^3.5.0",
     "mkdirp": "^0.5.1",
     "react": "^0.13.3",
