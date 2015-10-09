@@ -10,7 +10,7 @@
     "clean": "npm run -s clean:build && npm run -s clean:demo",
     "prebuild": "npm run -s clean",
     "build:js": "babel --stage 0 --ignore src/demo.js -d build src",
-    "build:demo": "NODE_ENV=production browserify -t [babelify --stage 0] -t envify -t [uglifyify --no-sourcemap] src/demo.js -o demo/frrb.js",
+    "build:demo": "NODE_ENV=production browserify -t [babelify --stage 0] -t envify -g [uglifyify --no-sourcemap] src/demo.js -o demo/frrb.js",
     "build:css": "unistyle --no-babel -o demo/frrb.css style",
     "build:html": "cp -f demo.html demo/index.html",
     "build": "npm run -s build:js && npm run -s build:css && npm run -s build:demo && npm run -s build:html",
@@ -35,6 +35,7 @@
   "license": "MIT",
   "devDependencies": {
     "babel": "^5.8.23",
+    "babel-eslint": "^4.1.3",
     "babelify": "^6.3.0",
     "browserify": "^11.2.0",
     "envify": "^3.4.0",
